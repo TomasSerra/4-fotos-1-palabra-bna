@@ -27,7 +27,7 @@ function App() {
     <>
       {page === 0 && <Home goToNextPage={() => {setPage(1)}}/>}
       {page === 1 && <Trivia topic={topic} intervalTime={3} goToNextPage={() => {setPage(2)}} questions={Questions} setPoints={setPoints} questionTime={25} numberOfQuestions={numberOfQuestions} logo={Logo}/>}
-      {page === 2 && <End goToNextPage={() => {setPage(0)}} hasWin={points>=numberOfQuestions*0.5}/>}
+      {page === 2 && <End goToNextPage={() => {setPage(0)}} hasWin={points>=numberOfQuestions*0.5} correctas={points} total={numberOfQuestions}/>}
     </>
   );
 }

@@ -7,7 +7,7 @@ import Logo from '../../assets/imgs/general/logo.png'
 import Trofeo from '../../assets/imgs/general/trofeo.png'
 import Reloj from '../../assets/imgs/general/reloj.png'
 
-function End({goToNextPage, hasWin}) {
+function End({goToNextPage, hasWin, correctas, total}) {
   const [width, height] = useWindowSize()
 
   useEffect(() => {
@@ -37,8 +37,8 @@ function End({goToNextPage, hasWin}) {
         </>
         :
         <>
-          <h2>¡Se te acabó el tiempo!</h2>
-          <p>Gracias por participar</p>
+          <h2>Gracias por participar</h2>
+          <p>Acertaste {correctas}/{total}</p>
           <img src={Reloj} className='clock'/>
         </>
       }
