@@ -1,0 +1,163 @@
+.trivia-page{
+    height: 100dvh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #005381;
+    justify-content: space-between;
+
+    .top-section{
+        margin-top: 2dvh;
+        margin-bottom: 3dvh;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        img{
+            height: 5dvh;
+        }
+
+        .time-counter{
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: auto;
+            bottom: 0;
+            margin: auto;
+            background-color: #008EDD;
+            border-top-left-radius: 1dvh;
+            border-bottom-left-radius: 1dvh;
+            width: 20vw;
+            height: 5dvh;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 2vw;
+            box-sizing: border-box;
+
+            p{
+                color: white;
+                font-size: 5vw;
+                margin-left: 2vw;
+                font-weight: bold;
+                font-family: 'Arial';
+            }
+
+            svg{
+                width: 5vw;
+                height: 5vw;
+            }
+        }
+    }
+
+    .question-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        justify-content: start;
+
+        .text-container{
+            width: 80vw;
+            height: 4vw;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5vw;
+            align-items: center;
+
+
+            .text{
+                text-align: center;
+                height: 4vw;
+                width: 100%;
+                color: white;
+                font-size: 4vw;
+                margin: 0;
+            }
+        }
+
+        .question-container{
+            font-size: 4vw;
+            color: white;
+            width: 80vw;
+            background-color: #008EDD;
+            height: 80vw;
+            min-height: 50vw;
+            border-radius: 1.5dvh;
+            padding: 1dvh;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .row{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .image{
+                    width: 37vw;
+                    height: 37vw;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 1.5dvh;
+                }
+            }
+        }
+    }
+
+    .options-section{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4dvh;
+        margin-top: 2dvh;
+        .options-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            .option-button{
+                font-size: 5vw;
+                border: none;
+                background-color: #ffffff;
+                width: 80vw;
+                height: fit-content;
+                padding: 1.3dvh 1vw;
+                margin: 1.2dvh 0;
+                color: black;
+                border-radius: 1dvh;
+                box-shadow: #9c9c9c 0 1.2vw 0;
+                font-weight: bold;
+            }
+            
+            .option-button.correct-option{
+                background-color: rgb(0, 187, 0);
+                box-shadow: rgb(0, 145, 0) 0 1vw 0;
+                color: white;
+
+                &:disabled{
+                    opacity: 1;
+                }
+            }
+
+            .option-button.incorrect-option{
+                background-color: rgb(255, 72, 72);
+                box-shadow: rgb(182, 81, 81) 0 1vw 0;
+                color: #ffffff;
+
+                &:disabled{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+{
+  "1": [
+    {
+      "question": "campo",
+      "options": [
+        "Lechuga",
+        "Vacas",
+        "Pasto",
+        "Campo"
+      ]
+    },
+    {
+      "question": "prestamo",
+      "options": [
+        "Compra",
+        "Lapicera",
+        "Llave",
+        "Prestamo"
+      ]
+    },
+    {
+      "question": "tarjeta",
+      "options": [
+        "Efectivo",
+        "Pagos",
+        "Tarjeta"
+      ]
+    },
+    {
+      "question": "banco",
+      "options": [
+        "Ahorro",
+        "Efectivo",
+        "Seguridad",
+        "Banco Nación"
+      ]
+    },
+    {
+      "question": "ahorro",
+      "options": [
+        "Chanchito",
+        "Monedas",
+        "Colchón",
+        "Ahorro"
+      ]
+    },
+    {
+      "question": "qr",
+      "options": [
+        "Pago Online",
+        "Efectivo",
+        "Descuentos",
+        "Pagos con QR"
+      ]
+    },
+    {
+      "question": "tienda",
+      "options": [
+        "Descuentos",
+        "Chango",
+        "Bolsas",
+        "Tienda"
+      ]
+    }
+  ]
+}
+  
