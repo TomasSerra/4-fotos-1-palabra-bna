@@ -18,6 +18,12 @@ function App() {
     bloquearGestos()
   }, [])
 
+  useEffect(() => {
+    if(page === 0){
+      setPoints(0)
+    }
+  }, [page])
+
   function bloquearGestos(){
     document.addEventListener('contextmenu', event => event.preventDefault());
     document.addEventListener('selectstart', event => event.preventDefault());
