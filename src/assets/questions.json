@@ -23,6 +23,7 @@
       "options": [
         "Efectivo",
         "Pagos",
+        "Celular",
         "Tarjeta"
       ]
     },
