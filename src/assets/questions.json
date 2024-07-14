@@ -62,6 +62,15 @@
         "Bolsas",
         "Tienda"
       ]
+    },
+    {
+      "question": "bna",
+      "options": [
+        "Celular",
+        "Tecnología",
+        "Aplicación",
+        "BNA+"
+      ]
     }
   ]
 }

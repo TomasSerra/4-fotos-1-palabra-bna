@@ -16,6 +16,7 @@ function Trivia({topic, goToNextPage, intervalTime, setPoints, questions, questi
   const [thisQuestions, setThisQuestions] = useState([])
 
   const imgPath = './imgs/questions/' 
+  const imgType = 'jpg'
 
   // Función para seleccionar preguntas aleatorias
   const selectRandomQuestions = (questions, n) => {
@@ -126,12 +127,12 @@ function Trivia({topic, goToNextPage, intervalTime, setPoints, questions, questi
           </div>
           <div className="question-container">
               <div className="row">
-                <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/1.webp')"}}/>
-                <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/2.webp')"}}/>
+                <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/1."+imgType+"')"}}/>
+                <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/2."+imgType+"')"}}/>
               </div>
               <div className="row">
-                <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/3.webp')"}}/>
-                <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/4.webp')"}}/>
+              <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/3."+imgType+"')"}}/>
+              <div className='image' style={{backgroundImage: "url('"+imgPath+actualQuestion+"/4."+imgType+"')"}}/>
               </div>
           </div>
         </div>
