@@ -8,6 +8,14 @@
     background-position: center;
     background-size: cover;
 
+    .secret-button-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15vw;
+        height: 15vw;
+    }
+
     .header{
         margin-top: 2dvh;
         margin-bottom: 3dvh;
