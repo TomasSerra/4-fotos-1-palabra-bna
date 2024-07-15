@@ -12,10 +12,10 @@ function Home({goToNextPage}) {
 
   return (
     <div className='home-page'>
-      <div className="secret-button-container">
+      <div style={{position: 'absolute', top: 0, left: 0, width: '15vw', height: '15vw'}}>
         <SecretButton whenClicked={() => setShowStats(true)} totalClicks={2}/>
       </div>
-      {showStats && <StatsViewer whenClose={()=>{setShowStats(false)}} />}
+      {showStats && <StatsViewer whenClose={()=>{setShowStats(false)}} storageKey={'stats-4-fotos-bna'}/>}
       <div className="header">
         <img src={Logo} />
       </div>

@@ -25,7 +25,7 @@ function End({goToNextPage, hasWin, correctas, total}) {
 // }
 
   const setDataToLocalStorage = () => {
-    const jsonData = localStorage.getItem('estadisticas');
+    const jsonData = localStorage.getItem('stats-4-fotos-bna');
     let estadisticas = {}
     if (jsonData) {
       estadisticas = JSON.parse(jsonData);
@@ -37,7 +37,7 @@ function End({goToNextPage, hasWin, correctas, total}) {
     } else {
       estadisticas[dia] = 1
     }
-    localStorage.setItem('estadisticas', JSON.stringify(estadisticas));
+    localStorage.setItem('stats-4-fotos-bna', JSON.stringify(estadisticas));
   }
 
   return (

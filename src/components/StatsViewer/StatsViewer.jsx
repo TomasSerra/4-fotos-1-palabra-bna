@@ -8,21 +8,21 @@ import './StatsViewer.scss'
 //     ...
 // }
 
-function StatsViewer({whenClose}) {
+function StatsViewer({whenClose, storageKey}) {
     const [estadisticas, setEstadisticas] = useState({})
     useEffect(() => {
         readData();
     }, [])
 
     const readData = () => {
-        const jsonData = localStorage.getItem('estadisticas');
+        const jsonData = localStorage.getItem(storageKey);
         if (jsonData) {
             setEstadisticas(JSON.parse(jsonData));
         }
     }
 
     const deleteData = () => { 
-        localStorage.removeItem('estadisticas');
+        localStorage.removeItem(storageKey);
         setEstadisticas({});
     }
 
